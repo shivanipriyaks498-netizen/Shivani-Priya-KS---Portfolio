@@ -8,6 +8,7 @@ import Certificates from "./sections/Certificates";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
+import Training from "./sections/Training";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Skills />
       <Education />
+      <Training />
       <Projects />
       <Certificates />
       <Experience />
