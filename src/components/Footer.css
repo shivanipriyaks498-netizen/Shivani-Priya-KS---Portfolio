@@ -13,6 +13,7 @@
   padding-bottom: 45px;
 }
 
+/* Brand */
 .footer-logo {
   font-size: 32px;
   font-weight: 800;
@@ -32,6 +33,7 @@
   font-size: 14px;
 }
 
+/* Quick Links and Social */
 .footer-links,
 .footer-social {
   display: flex;
@@ -45,6 +47,7 @@
   margin-bottom: 10px;
 }
 
+/* Quick Links */
 .footer-links a {
   color: #aaa;
   text-decoration: none;
@@ -57,28 +60,40 @@
   transform: translateX(5px);
 }
 
+/* Social Icons */
 .footer-icons {
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
 .footer-icons a {
-  width: 42px;
-  height: 42px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   border: 1px solid rgba(149, 132, 255, 0.4);
   border-radius: 50%;
+  text-decoration: none;
   transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.footer-icons a svg {
+  width: 22px;
+  height: 22px;
+  display: block;
 }
 
 .footer-icons a:hover {
   background: #9584ff;
+  border-color: #9584ff;
   transform: translateY(-5px);
 }
 
+/* Footer Bottom */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 22px;
@@ -100,9 +115,19 @@
   color: #9584ff;
   text-decoration: none;
   font-size: 13px;
+  transition: 0.3s;
 }
 
+.back-to-top:hover {
+  color: white;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
+  .footer {
+    padding: 45px 7% 20px;
+  }
+
   .footer-container {
     grid-template-columns: 1fr;
     gap: 35px;

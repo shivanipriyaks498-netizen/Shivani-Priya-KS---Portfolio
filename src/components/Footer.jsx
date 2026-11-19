@@ -1,10 +1,10 @@
 
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "./Footer.css";
 
 function Footer() {
   return (
     <footer className="footer">
-
       <div className="footer-container">
 
         {/* Brand */}
@@ -22,11 +22,11 @@ function Footer() {
         {/* Quick Links */}
         <div className="footer-links">
           <h3>Quick Links</h3>
-
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
+          <a href="#training">Training</a>
           <a href="#projects">Projects</a>
           <a href="#certificates">Certificates</a>
           <a href="#experience">Experience</a>
@@ -38,14 +38,13 @@ function Footer() {
           <h3>Connect With Me</h3>
 
           <div className="footer-icons">
-
             <a
               href="https://github.com/shivanipriyaks498-netizen"
               target="_blank"
               rel="noreferrer"
               aria-label="GitHub"
             >
-              GH
+              <FaGithub />
             </a>
 
             <a
@@ -54,24 +53,22 @@ function Footer() {
               rel="noreferrer"
               aria-label="LinkedIn"
             >
-              in
+              <FaLinkedin />
             </a>
 
             <a
               href="mailto:shivanipriyaks498@gmail.com"
               aria-label="Email"
             >
-              ✉
+              <FaEnvelope />
             </a>
-
           </div>
         </div>
 
       </div>
 
-      {/* Copyright */}
+      {/* Footer Bottom */}
       <div className="footer-bottom">
-
         <p>
           © {new Date().getFullYear()} Shivani Priya KS.
           All Rights Reserved.
@@ -80,9 +77,7 @@ function Footer() {
         <a href="#home" className="back-to-top">
           Back to Top ↑
         </a>
-
       </div>
-
     </footer>
   );
 }
