@@ -1,0 +1,137 @@
+
+.contact {
+  min-height: 100vh;
+  padding: 100px 8%;
+  background: #03020b;
+  color: white;
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.contact-heading > p {
+  color: #9584ff;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.contact-heading h2 {
+  font-size: 44px;
+  margin: 15px 0;
+}
+
+.contact-heading h2 span {
+  color: #9584ff;
+}
+
+.contact-heading h4 {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.contact-info h3 {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.contact-info > p {
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.contact-info a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #c9beff;
+  text-decoration: none;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.contact-info a svg {
+  color: #9584ff;
+  width: 22px;
+}
+
+.contact-info a:hover {
+  color: white;
+  transform: translateX(5px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  background: #100d20;
+  border: 1px solid rgba(149, 132, 255, 0.25);
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #9584ff;
+  box-shadow: 0 0 12px rgba(149, 132, 255, 0.15);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #9584ff;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #745cff;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 75px 6%;
+  }
+
+  .contact-heading h2 {
+    font-size: 34px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

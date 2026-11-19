@@ -1,0 +1,191 @@
+
+.certificates {
+  min-height: 100vh;
+  padding: 110px 8%;
+  background: #03020b;
+  color: white;
+}
+
+/* Heading */
+
+.certificates-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-subtitle {
+  color: #9584ff;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.certificates-heading h2 {
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.certificates-heading h2 span {
+  color: #9584ff;
+}
+
+.certificates-intro {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Certificate cards */
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.certificate-card {
+  padding: 30px;
+  border: 1px solid rgba(149, 132, 255, 0.25);
+  border-radius: 20px;
+
+  background: linear-gradient(
+    145deg,
+    rgba(149, 132, 255, 0.12),
+    rgba(255, 255, 255, 0.02)
+  );
+
+  transition: all 0.4s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  border-color: #9584ff;
+
+  box-shadow:
+    0 10px 35px rgba(149, 132, 255, 0.18);
+}
+
+.certificate-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.certificate-icon {
+  font-size: 35px;
+}
+
+.certificate-status {
+  display: inline-block;
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.certificate-status.completed {
+  color: #a99aff;
+  background: rgba(149, 132, 255, 0.15);
+}
+
+.certificate-status.progress {
+  color: #ffd27a;
+  background: rgba(255, 210, 122, 0.12);
+}
+
+.certificate-year {
+  color: #9584ff;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.certificate-card h3 {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.certificate-card h4 {
+  color: #9584ff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.certificate-description {
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.certificate-link {
+  display: inline-block;
+  color: #9584ff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.certificate-link:hover {
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Internship card */
+
+.internship-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  margin-top: 60px;
+  padding: 35px;
+
+  border: 1px solid rgba(149, 132, 255, 0.4);
+  border-radius: 20px;
+
+  background: linear-gradient(
+    120deg,
+    rgba(149, 132, 255, 0.16),
+    rgba(255, 255, 255, 0.02)
+  );
+}
+
+.internship-icon {
+  font-size: 55px;
+}
+
+.internship-content h3 {
+  font-size: 25px;
+  margin: 12px 0;
+}
+
+.internship-description {
+  color: #aaa;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .certificates {
+    padding: 80px 6%;
+  }
+
+  .certificates-heading h2 {
+    font-size: 32px;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .internship-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+  }
+}

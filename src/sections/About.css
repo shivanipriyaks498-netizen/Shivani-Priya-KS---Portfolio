@@ -1,0 +1,150 @@
+
+/* ABOUT SECTION */
+
+.about {
+  min-height: 100vh;
+  padding: 100px 10%;
+  box-sizing: border-box;
+  background: #03020b;
+  color: white;
+}
+
+/* HEADING */
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.about-subtitle {
+  color: #9584ff;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+.about-heading h2 {
+  font-size: 48px;
+  margin: 12px 0;
+  font-weight: 800;
+}
+
+.about-heading h2 span {
+  color: #9584ff;
+}
+
+/* CONTENT */
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* LEFT TEXT */
+
+.about-text h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.about-text h3 span {
+  color: #9584ff;
+}
+
+.about-text h4 {
+  color: #9584ff;
+  font-size: 19px;
+  margin-bottom: 25px;
+}
+
+.about-text p {
+  color: #b9b6c9;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+/* BUTTON */
+
+.about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 13px 28px;
+  border: 1px solid #9584ff;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: #9584ff;
+  color: #03020b;
+  box-shadow: 0 0 25px rgba(149,132,255,0.4);
+}
+
+/* RIGHT CARD */
+
+.about-card {
+  position: relative;
+  padding: 40px;
+  background: #0b0917;
+  border: 1px solid rgba(149,132,255,0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(80,50,180,0.1);
+}
+
+.about-card h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.passion-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.passion-item span {
+  color: #9584ff;
+  font-weight: bold;
+}
+
+.passion-item p {
+  color: #e0ddeb;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .about {
+    padding: 75px 7%;
+  }
+
+  .about-heading {
+    margin-bottom: 45px;
+  }
+
+  .about-heading h2 {
+    font-size: 38px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-text h3 {
+    font-size: 25px;
+  }
+
+  .about-card {
+    padding: 28px;
+  }
+}
