@@ -64,7 +64,7 @@ function Home() {
         <div className="hero-socials">
 
           <a
-            href="mailto:YOUR_EMAIL@gmail.com"
+            href="mailto:shivanipriyaks498@gmail.com"
             className="social-btn"
             title="Email"
             aria-label="Email"

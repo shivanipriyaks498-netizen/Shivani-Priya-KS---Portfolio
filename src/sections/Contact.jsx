@@ -32,8 +32,8 @@ function Contact() {
             and exploring new opportunities in technology.
           </p>
 
-          <a href="mailto:YOUR_EMAIL@gmail.com">
-            ✉ YOUR_EMAIL@gmail.com
+          <a href="mailto:shivanipriyaks498@gmail.com">
+            ✉ shivanipriyaks498@gmail.com
           </a>
 
           <a
@@ -55,7 +55,7 @@ function Contact() {
 
         <motion.form
           className="contact-form"
-          action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
+          action="https://formsubmit.co/shivanipriyaks498@gmail.com"
           method="POST"
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
