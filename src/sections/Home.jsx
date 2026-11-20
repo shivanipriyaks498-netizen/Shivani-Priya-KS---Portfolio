@@ -118,7 +118,7 @@ function Home() {
 
         {/* Resume button */}
         <a
-          href="/files/Shivani%20Priya%20KS%20-%20Resume.pdf"
+          href="/files/Shivani%20Priya%20KS_Resume.pdf"
           download="Shivani Priya KS - Resume.pdf"
           className="resume-btn"
         >
