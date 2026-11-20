@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ theme, toggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const links = [
@@ -18,7 +18,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar theme-${theme}`}>
       <a
         href="#home"
         className="logo"
@@ -27,7 +27,10 @@ function Navbar() {
         SK<span>.</span>
       </a>
 
-      <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+      <div
+        className={`nav-links ${menuOpen ? "active" : ""}`}
+        id="portfolio-navigation"
+      >
         {links.map((link) => (
           <a
             key={link.id}
@@ -39,16 +42,42 @@ function Navbar() {
         ))}
       </div>
 
-      <button
-        type="button"
-        className="menu-toggle"
-        onClick={() => setMenuOpen((previous) => !previous)}
-        aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
-        aria-expanded={menuOpen}
-        aria-controls="portfolio-navigation"
-      >
-        {menuOpen ? "✕" : "☰"}
-      </button>
+      <div className="navbar-actions">
+        {/* Dark / Light Theme Button */}
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={toggleTheme}
+          aria-label={
+            theme === "dark"
+              ? "Switch to light mode"
+              : "Switch to dark mode"
+          }
+          title={
+            theme === "dark"
+              ? "Switch to light mode"
+              : "Switch to dark mode"
+          }
+        >
+          {theme === "dark" ? "☀️" : "🌙"}
+        </button>
+
+        {/* Mobile Menu Button */}
+        <button
+          type="button"
+          className="menu-toggle"
+          onClick={() => setMenuOpen((previous) => !previous)}
+          aria-label={
+            menuOpen
+              ? "Close navigation menu"
+              : "Open navigation menu"
+          }
+          aria-expanded={menuOpen}
+          aria-controls="portfolio-navigation"
+        >
+          {menuOpen ? "✕" : "☰"}
+        </button>
+      </div>
     </nav>
   );
 }
