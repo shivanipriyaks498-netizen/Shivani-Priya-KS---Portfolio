@@ -1,357 +1,56 @@
 
-/* =====================================
-   PORTFOLIO LIGHT THEME OVERRIDES
-===================================== */
+/* =================================
+   ESPRESSO & CHAMPAGNE THEME
+================================= */
 
-:root[data-theme="light"] body,
-:root[data-theme="light"] #root,
-:root[data-theme="light"] .app {
-  background: var(--bg);
-  color: var(--text);
+/* DARK MODE */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #211C19;
+  --surface: #2D2621;
+  --text: #D3C7B8;
+  --text-h: #F2EBDD;
+  --border: rgba(217, 190, 160, 0.18);
+
+  --accent: #B99A78;
+  --accent-bg: rgba(185, 154, 120, 0.14);
+  --accent-border: rgba(185, 154, 120, 0.5);
+
+  --social-bg: #382E27;
+  --shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* =====================================
-   SECTION BACKGROUNDS
-===================================== */
+/* LIGHT MODE */
+:root[data-theme="light"] {
+  color-scheme: light;
 
-:root[data-theme="light"] .home,
-:root[data-theme="light"] .about,
-:root[data-theme="light"] .skills,
-:root[data-theme="light"] .education,
-:root[data-theme="light"] .training,
-:root[data-theme="light"] .projects,
-:root[data-theme="light"] .certificates,
-:root[data-theme="light"] .experience,
-:root[data-theme="light"] .contact {
-  background: var(--bg);
-  color: var(--text);
+  --bg: #F2EBDD;
+  --surface: #FFFCF6;
+  --text: #62564B;
+  --text-h: #211C19;
+  --border: rgba(100, 75, 50, 0.16);
+
+  --accent: #8C6547;
+  --accent-bg: rgba(140, 101, 71, 0.10);
+  --accent-border: rgba(140, 101, 71, 0.4);
+
+  --social-bg: #E8DDCE;
+  --shadow: 0 5px 20px rgba(80, 55, 35, 0.10);
 }
 
-/* Home gradient */
-
-:root[data-theme="light"] .home {
-  background:
-    radial-gradient(
-      ellipse at 50% 55%,
-      rgba(114, 81, 214, 0.13),
-      transparent 55%
-    ),
-    var(--bg);
-}
-
-/* =====================================
-   HEADINGS
-===================================== */
-
-:root[data-theme="light"] .hero-left h1,
-:root[data-theme="light"] .hero-right h2,
-:root[data-theme="light"] .about-heading h2,
-:root[data-theme="light"] .about-text h3,
-:root[data-theme="light"] .about-card h3,
-:root[data-theme="light"] .skills-heading h2,
-:root[data-theme="light"] .education-heading h2,
-:root[data-theme="light"] .education-card h3,
-:root[data-theme="light"] .training-heading h2,
-:root[data-theme="light"] .training-content h3,
-:root[data-theme="light"] .projects-heading h2,
-:root[data-theme="light"] .project-card h3,
-:root[data-theme="light"] .certificates-heading h2,
-:root[data-theme="light"] .certificate-card h3,
-:root[data-theme="light"] .internship-content h3,
-:root[data-theme="light"] .experience-heading h2,
-:root[data-theme="light"] .experience-card h3,
-:root[data-theme="light"] .contact-heading h2,
-:root[data-theme="light"] .contact-info h3 {
-  color: var(--text-h);
-}
-
-/* =====================================
-   PARAGRAPHS AND DESCRIPTION TEXT
-===================================== */
-
-:root[data-theme="light"] .about-text p,
-:root[data-theme="light"] .passion-item p,
-:root[data-theme="light"] .skills-heading h4,
-:root[data-theme="light"] .education-card p,
-:root[data-theme="light"] .training-content p,
-:root[data-theme="light"] .projects-heading h4,
-:root[data-theme="light"] .project-description,
-:root[data-theme="light"] .project-category,
-:root[data-theme="light"] .certificates-intro,
-:root[data-theme="light"] .certificate-description,
-:root[data-theme="light"] .experience-heading h4,
-:root[data-theme="light"] .experience-description,
-:root[data-theme="light"] .contact-heading h4,
-:root[data-theme="light"] .contact-info > p {
-  color: var(--text);
-}
-
-/* =====================================
-   CARDS
-===================================== */
-
-:root[data-theme="light"] .about-card,
-:root[data-theme="light"] .skill-card,
-:root[data-theme="light"] .education-card {
-  background: var(--surface);
-  border-color: var(--border);
-}
-
-:root[data-theme="light"] .project-card,
-:root[data-theme="light"] .contact-info {
-  background: linear-gradient(
-    145deg,
-    #ffffff,
-    #f0ebff
-  );
-  border-color: var(--border);
-}
-
-:root[data-theme="light"] .certificate-card,
-:root[data-theme="light"] .experience-card {
-  background: linear-gradient(
-    145deg,
-    #ffffff,
-    #f2efff
-  );
-  border-color: var(--border);
-}
-
-:root[data-theme="light"] .training-card {
-  background: linear-gradient(
-    145deg,
-    #ffffff,
-    #eee9ff
-  );
-  border-color: var(--border);
-}
-
-/* Internship card */
-
-:root[data-theme="light"] .internship-card {
-  background: linear-gradient(
-    120deg,
-    #eee9ff,
-    #ffffff
-  );
-  border-color: var(--accent-border);
-}
-
-/* =====================================
-   TEXT INSIDE CARDS
-===================================== */
-
-:root[data-theme="light"] .passion-item p {
-  color: var(--text);
-}
-
-:root[data-theme="light"] .education-card h4 {
-  color: var(--text);
-}
-
-:root[data-theme="light"] .training-content h4,
-:root[data-theme="light"] .certificate-card h4,
-:root[data-theme="light"] .experience-card h4 {
-  color: var(--accent);
-}
-
-/* =====================================
-   CARD BORDERS AND HOVER
-===================================== */
-
-:root[data-theme="light"] .skill-card:hover,
-:root[data-theme="light"] .education-card:hover,
-:root[data-theme="light"] .project-card:hover,
-:root[data-theme="light"] .certificate-card:hover,
-:root[data-theme="light"] .experience-card:hover,
-:root[data-theme="light"] .training-card:hover {
-  border-color: var(--accent);
-  box-shadow: 0 10px 30px rgba(114, 81, 214, 0.12);
-}
-
-/* =====================================
-   BUTTONS
-===================================== */
-
-:root[data-theme="light"] .about-btn {
-  color: var(--accent);
-  border-color: var(--accent);
-}
-
-:root[data-theme="light"] .about-btn:hover {
-  color: #ffffff;
-  background: var(--accent);
-}
-
-:root[data-theme="light"] .social-btn {
-  color: var(--accent);
-  background: var(--accent-bg);
-  border-color: var(--accent-border);
-}
-
-:root[data-theme="light"] .social-btn:hover {
-  color: #ffffff;
-  background: var(--accent);
-}
-
-:root[data-theme="light"] .project-link {
-  color: var(--accent);
-}
-
-:root[data-theme="light"] .project-link:hover {
-  color: var(--text-h);
-}
-
-:root[data-theme="light"] .certificate-link {
-  color: var(--accent);
-}
-
-:root[data-theme="light"] .certificate-link:hover {
-  color: var(--text-h);
-}
-
-:root[data-theme="light"] .contact-email {
-  color: var(--accent);
-}
-
-:root[data-theme="light"] .contact-email:hover {
-  color: var(--text-h);
-}
-
-/* =====================================
-   TECHNOLOGY TAGS
-===================================== */
-
-:root[data-theme="light"] .project-tech span,
-:root[data-theme="light"] .training-tags span {
-  color: var(--accent);
-  background: var(--accent-bg);
-  border-color: var(--accent-border);
-}
-
-/* =====================================
-   SOCIAL ICONS
-===================================== */
-
-:root[data-theme="light"] .contact-social-btn {
-  color: var(--accent);
-  background: var(--accent-bg);
-  border-color: var(--accent);
-}
-
-:root[data-theme="light"] .contact-social-btn:hover {
-  color: #ffffff;
-  background: var(--accent);
-}
-
-/* =====================================
-   FOOTER
-===================================== */
-
-:root[data-theme="light"] .footer {
-  background: #eeeafb;
-  color: var(--text);
-  border-top: 1px solid var(--border);
-}
-
-:root[data-theme="light"] .footer-logo {
-  color: var(--text-h);
-}
-
-:root[data-theme="light"] .footer-brand p,
-:root[data-theme="light"] .footer-links a,
-:root[data-theme="light"] .footer-bottom p {
-  color: var(--text);
-}
-
-:root[data-theme="light"] .footer-links a:hover,
-:root[data-theme="light"] .back-to-top:hover {
-  color: var(--accent);
-}
-
-:root[data-theme="light"] .footer-icons a {
-  color: var(--accent);
-  border-color: var(--accent-border);
-}
-
-:root[data-theme="light"] .footer-icons a:hover {
-  color: #ffffff;
-  background: var(--accent);
-}
-
-:root[data-theme="light"] .footer-bottom {
-  border-color: var(--border);
-}
-
-:root[data-theme="light"] .back-to-top {
-  color: var(--accent);
-}
-
-/* =====================================
-   EDUCATION TIMELINE
-===================================== */
-
-:root[data-theme="light"] .education-timeline {
-  border-left-color: var(--accent-border);
-}
-
-/* =====================================
-   CERTIFICATE STATUS
-===================================== */
-
-:root[data-theme="light"] .certificate-status.completed {
-  color: #16834b;
-  background: rgba(46, 204, 113, 0.12);
-}
-
-:root[data-theme="light"] .certificate-status.progress {
-  color: #a56500;
-  background: rgba(255, 210, 122, 0.2);
-}
-
-/* =====================================
-   EXPERIENCE STATUS
-===================================== */
-
-:root[data-theme="light"] .experience-status {
-  color: #946000;
-  background: rgba(255, 210, 122, 0.2);
-}
-
-/* =====================================
-   RESUME BUTTON
-===================================== */
-
-:root[data-theme="light"] .resume-btn {
-  color: #ffffff;
-}
-
-/* =====================================
-   SMOOTH THEME TRANSITION
-===================================== */
-
-:root[data-theme="light"] .home,
-:root[data-theme="light"] .about,
-:root[data-theme="light"] .skills,
-:root[data-theme="light"] .education,
-:root[data-theme="light"] .training,
-:root[data-theme="light"] .projects,
-:root[data-theme="light"] .certificates,
-:root[data-theme="light"] .experience,
-:root[data-theme="light"] .contact,
-:root[data-theme="light"] .footer,
-:root[data-theme="light"] .about-card,
-:root[data-theme="light"] .skill-card,
-:root[data-theme="light"] .education-card,
-:root[data-theme="light"] .project-card,
-:root[data-theme="light"] .certificate-card,
-:root[data-theme="light"] .experience-card,
-:root[data-theme="light"] .training-card,
-:root[data-theme="light"] .contact-info {
+/* SMOOTH THEME TRANSITION */
+body,
+#root,
+.app,
+section,
+nav,
+footer,
+header,
+article,
+.card {
   transition:
-    background 0.3s ease,
     background-color 0.3s ease,
     color 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease;
+    border-color 0.3s ease;
 }

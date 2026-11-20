@@ -1,12 +1,16 @@
 
+/* ==============================
+   CERTIFICATES SECTION
+================================ */
+
 .certificates {
   min-height: 100vh;
   padding: 110px 8%;
-  background: #03020b;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* Heading */
+/* HEADING */
 
 .certificates-heading {
   text-align: center;
@@ -14,7 +18,7 @@
 }
 
 .section-subtitle {
-  color: #9584ff;
+  color: var(--accent);
   letter-spacing: 4px;
   font-size: 13px;
   font-weight: 600;
@@ -23,19 +27,20 @@
 .certificates-heading h2 {
   font-size: 42px;
   margin: 15px 0;
+  color: var(--text-h);
 }
 
 .certificates-heading h2 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 .certificates-intro {
-  color: #aaa;
+  color: var(--text);
   font-size: 15px;
   line-height: 1.7;
 }
 
-/* Certificate cards */
+/* CERTIFICATE CARDS */
 
 .certificates-grid {
   display: grid;
@@ -45,13 +50,13 @@
 
 .certificate-card {
   padding: 30px;
-  border: 1px solid rgba(149, 132, 255, 0.25);
+  border: 1px solid var(--border);
   border-radius: 20px;
 
   background: linear-gradient(
     145deg,
-    rgba(149, 132, 255, 0.12),
-    rgba(255, 255, 255, 0.02)
+    var(--accent-bg),
+    var(--surface)
   );
 
   transition: all 0.4s ease;
@@ -59,10 +64,8 @@
 
 .certificate-card:hover {
   transform: translateY(-10px);
-  border-color: #9584ff;
-
-  box-shadow:
-    0 10px 35px rgba(149, 132, 255, 0.18);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
 }
 
 .certificate-top {
@@ -76,10 +79,12 @@
   font-size: 35px;
 }
 
+/* STATUS */
+
 .certificate-status {
-  color: #8ee6b1;
-  background: rgba(46, 204, 113, 0.12);
-  border: 1px solid rgba(46, 204, 113, 0.3);
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 12px;
@@ -87,17 +92,17 @@
 }
 
 .certificate-status.completed {
-  color: #8ee6b1;
-  background: #8ee6b1(149, 132, 255, 0.15);
+  color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .certificate-status.progress {
-  color: #ffd27a;
-  background: rgba(255, 210, 122, 0.12);
+  color: var(--accent);
+  background: var(--accent-bg);
 }
 
 .certificate-year {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 13px;
   margin-bottom: 10px;
 }
@@ -106,16 +111,17 @@
   font-size: 21px;
   line-height: 1.5;
   margin-bottom: 10px;
+  color: var(--text-h);
 }
 
 .certificate-card h4 {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 14px;
   font-weight: 500;
 }
 
 .certificate-description {
-  color: #aaa;
+  color: var(--text);
   line-height: 1.8;
   font-size: 14px;
   margin: 20px 0;
@@ -123,18 +129,18 @@
 
 .certificate-link {
   display: inline-block;
-  color: #9584ff;
+  color: var(--accent);
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
 }
 
 .certificate-link:hover {
-  color: white;
+  color: var(--text-h);
   letter-spacing: 1px;
 }
 
-/* Internship card */
+/* INTERNSHIP CARD */
 
 .internship-card {
   display: flex;
@@ -144,13 +150,13 @@
   margin-top: 60px;
   padding: 35px;
 
-  border: 1px solid rgba(149, 132, 255, 0.4);
+  border: 1px solid var(--accent-border);
   border-radius: 20px;
 
   background: linear-gradient(
     120deg,
-    rgba(149, 132, 255, 0.16),
-    rgba(255, 255, 255, 0.02)
+    var(--accent-bg),
+    var(--surface)
   );
 }
 
@@ -161,16 +167,17 @@
 .internship-content h3 {
   font-size: 25px;
   margin: 12px 0;
+  color: var(--text-h);
 }
 
 .internship-description {
-  color: #aaa;
+  color: var(--text);
   line-height: 1.8;
   margin-bottom: 18px;
   font-size: 14px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .certificates {

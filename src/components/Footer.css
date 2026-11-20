@@ -1,9 +1,13 @@
 
+/* ==============================
+   FOOTER
+================================ */
+
 .footer {
-  background: #05030e;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
   padding: 65px 8% 20px;
-  border-top: 1px solid rgba(149, 132, 255, 0.2);
+  border-top: 1px solid var(--border);
 }
 
 .footer-container {
@@ -13,27 +17,29 @@
   padding-bottom: 45px;
 }
 
-/* Brand */
+/* BRAND */
+
 .footer-logo {
   font-size: 32px;
   font-weight: 800;
-  color: white;
+  color: var(--text-h);
   text-decoration: none;
 }
 
 .footer-logo span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 .footer-brand p {
   max-width: 350px;
-  color: #aaa;
+  color: var(--text);
   line-height: 1.8;
   margin-top: 18px;
   font-size: 14px;
 }
 
-/* Quick Links and Social */
+/* QUICK LINKS AND SOCIAL */
+
 .footer-links,
 .footer-social {
   display: flex;
@@ -45,22 +51,25 @@
 .footer-social h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  color: var(--text-h);
 }
 
-/* Quick Links */
+/* QUICK LINKS */
+
 .footer-links a {
-  color: #aaa;
+  color: var(--text);
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s;
 }
 
 .footer-links a:hover {
-  color: #9584ff;
+  color: var(--accent);
   transform: translateX(5px);
 }
 
-/* Social Icons */
+/* SOCIAL ICONS */
+
 .footer-icons {
   display: flex;
   align-items: center;
@@ -73,8 +82,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  border: 1px solid rgba(149, 132, 255, 0.4);
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
   border-radius: 50%;
   text-decoration: none;
   transition: 0.3s;
@@ -88,14 +98,16 @@
 }
 
 .footer-icons a:hover {
-  background: #9584ff;
-  border-color: #9584ff;
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
   transform: translateY(-5px);
 }
 
-/* Footer Bottom */
+/* FOOTER BOTTOM */
+
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--border);
   padding-top: 22px;
   display: flex;
   justify-content: space-between;
@@ -104,7 +116,7 @@
 }
 
 .footer-bottom p {
-  color: #888;
+  color: var(--text);
   font-size: 13px;
 }
 
@@ -112,17 +124,18 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #9584ff;
+  color: var(--accent);
   text-decoration: none;
   font-size: 13px;
   transition: 0.3s;
 }
 
 .back-to-top:hover {
-  color: white;
+  color: var(--text-h);
 }
 
-/* Responsive */
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .footer {
     padding: 45px 7% 20px;

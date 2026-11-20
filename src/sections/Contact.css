@@ -1,9 +1,13 @@
 
+/* ==============================
+   CONTACT SECTION
+================================ */
+
 .contact {
   min-height: 80vh;
   padding: 100px 8%;
-  background: #03020b;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .contact-heading {
@@ -12,7 +16,7 @@
 }
 
 .contact-heading > p {
-  color: #9584ff;
+  color: var(--accent);
   letter-spacing: 4px;
   font-size: 13px;
 }
@@ -20,14 +24,15 @@
 .contact-heading h2 {
   font-size: 44px;
   margin: 15px 0;
+  color: var(--text-h);
 }
 
 .contact-heading h2 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 .contact-heading h4 {
-  color: #aaa;
+  color: var(--text);
   font-weight: 400;
 }
 
@@ -41,21 +46,22 @@
   padding: 50px 35px;
   background: linear-gradient(
     145deg,
-    #100d20,
-    #080614
+    var(--surface),
+    var(--bg)
   );
-  border: 1px solid rgba(149, 132, 255, 0.25);
+  border: 1px solid var(--border);
   border-radius: 22px;
-  box-shadow: 0 0 35px rgba(149, 132, 255, 0.08);
+  box-shadow: var(--shadow);
 }
 
 .contact-info h3 {
   font-size: 30px;
   margin-bottom: 18px;
+  color: var(--text-h);
 }
 
 .contact-info > p {
-  color: #aaa;
+  color: var(--text);
   line-height: 1.8;
   margin-bottom: 28px;
 }
@@ -64,23 +70,23 @@
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #c9beff;
+  color: var(--accent);
   text-decoration: none;
   margin-bottom: 25px;
   transition: 0.3s;
 }
 
 .contact-email:hover {
-  color: white;
+  color: var(--text-h);
   transform: translateY(-2px);
 }
 
 .email-icon {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 22px;
 }
 
-/* Social Media Buttons */
+/* SOCIAL MEDIA BUTTONS */
 
 .contact-socials {
   display: flex;
@@ -96,10 +102,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #9584ff;
+  border: 1px solid var(--accent);
   border-radius: 50%;
-  background: rgba(149, 132, 255, 0.08);
-  color: #9584ff;
+  background: var(--accent-bg);
+  color: var(--accent);
   text-decoration: none;
   transition: 0.3s ease;
 }
@@ -110,13 +116,13 @@
 }
 
 .contact-social-btn:hover {
-  background: #9584ff;
-  color: white;
+  background: var(--accent);
+  color: var(--bg);
   transform: translateY(-5px);
-  box-shadow: 0 0 18px rgba(149, 132, 255, 0.5);
+  box-shadow: var(--shadow);
 }
 
-/* Let's Talk Button */
+/* LET'S TALK BUTTON */
 
 .lets-talk-btn {
   display: inline-flex;
@@ -125,13 +131,13 @@
   gap: 12px;
   padding: 15px 38px;
   border-radius: 30px;
-  background: #9584ff;
-  color: white;
+  background: var(--accent);
+  color: var(--bg);
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
   transition: 0.3s ease;
-  box-shadow: 0 5px 20px rgba(149, 132, 255, 0.2);
+  box-shadow: var(--shadow);
 }
 
 .lets-talk-btn span {
@@ -139,12 +145,13 @@
 }
 
 .lets-talk-btn:hover {
-  background: #745cff;
+  background: var(--text-h);
+  color: var(--bg);
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(149, 132, 255, 0.4);
+  box-shadow: var(--shadow);
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 768px) {
   .contact {

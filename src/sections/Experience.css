@@ -1,12 +1,16 @@
 
+/* ==============================
+   EXPERIENCE SECTION
+================================ */
+
 .experience {
   min-height: 80vh;
   padding: 100px 8%;
-  background: #03020b;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
-/* Heading */
+/* HEADING */
 
 .experience-heading {
   text-align: center;
@@ -14,7 +18,7 @@
 }
 
 .experience-heading > p {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 13px;
   letter-spacing: 4px;
   font-weight: 600;
@@ -23,18 +27,19 @@
 .experience-heading h2 {
   font-size: 42px;
   margin: 15px 0;
+  color: var(--text-h);
 }
 
 .experience-heading h2 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 .experience-heading h4 {
-  color: #aaa;
+  color: var(--text);
   font-weight: 400;
 }
 
-/* Cards grid */
+/* CARDS GRID */
 
 .experience-grid {
   display: grid;
@@ -42,25 +47,25 @@
   gap: 28px;
 }
 
-/* Individual card */
+/* INDIVIDUAL CARD */
 
 .experience-card {
   padding: 30px;
-  border: 1px solid rgba(149, 132, 255, 0.25);
+  border: 1px solid var(--border);
   border-radius: 20px;
 
   background: linear-gradient(
     145deg,
-    rgba(149, 132, 255, 0.12),
-    rgba(255, 255, 255, 0.02)
+    var(--accent-bg),
+    var(--surface)
   );
 
   transition: 0.35s ease;
 }
 
 .experience-card:hover {
-  border-color: #9584ff;
-  box-shadow: 0 10px 35px rgba(149, 132, 255, 0.18);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
 }
 
 .experience-top {
@@ -75,37 +80,39 @@
 }
 
 .experience-status {
-  color: #ffd27a;
-  background: rgba(255, 210, 122, 0.12);
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
   padding: 7px 13px;
   border-radius: 20px;
   font-size: 11px;
 }
 
 .experience-year {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 13px;
 }
 
 .experience-card h3 {
   font-size: 22px;
   margin: 12px 0;
+  color: var(--text-h);
 }
 
 .experience-card h4 {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 16px;
   font-weight: 500;
 }
 
 .experience-description {
-  color: #aaa;
+  color: var(--text);
   font-size: 14px;
   line-height: 1.8;
   margin-top: 18px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .experience {

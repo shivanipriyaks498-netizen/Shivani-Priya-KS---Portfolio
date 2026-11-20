@@ -1,8 +1,12 @@
 
+/* ==============================
+   TRAINING SECTION
+================================ */
+
 .training {
   padding: 100px 8%;
-  background: #03020b;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .training-heading {
@@ -11,7 +15,7 @@
 }
 
 .training-heading p {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 14px;
   letter-spacing: 3px;
   font-weight: 600;
@@ -19,13 +23,13 @@
 }
 
 .training-heading h2 {
-  color: white;
+  color: var(--text-h);
   font-size: clamp(30px, 4vw, 45px);
   font-weight: 800;
 }
 
 .training-heading h2 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 /* TRAINING CARD */
@@ -40,19 +44,19 @@
 
   background: linear-gradient(
     145deg,
-    rgba(149, 132, 255, 0.12),
-    rgba(20, 16, 35, 0.8)
+    var(--accent-bg),
+    var(--surface)
   );
 
-  border: 1px solid rgba(149, 132, 255, 0.3);
+  border: 1px solid var(--border);
   border-radius: 20px;
   transition: 0.3s ease;
 }
 
 .training-card:hover {
   transform: translateY(-7px);
-  border-color: #9584ff;
-  box-shadow: 0 15px 35px rgba(100, 70, 220, 0.15);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
 }
 
 /* GRADUATION ICON */
@@ -66,8 +70,8 @@
   align-items: center;
   justify-content: center;
 
-  color: #9584ff;
-  background: rgba(149, 132, 255, 0.15);
+  color: var(--accent);
+  background: var(--accent-bg);
 }
 
 /* CONTENT */
@@ -87,7 +91,7 @@
   margin-bottom: 18px;
 }
 
-/* IN PROGRESS - ORANGE */
+/* IN PROGRESS STATUS */
 
 .training-status {
   display: inline-flex;
@@ -95,9 +99,9 @@
   justify-content: center;
   gap: 6px;
 
-  color: #ffd27a;
-  background: rgba(255, 210, 122, 0.12);
-  border: 1px solid rgba(255, 210, 122, 0.35);
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
 
   padding: 6px 12px;
   border-radius: 20px;
@@ -110,19 +114,19 @@
 /* TITLE AND DESCRIPTION */
 
 .training-content h3 {
-  color: white;
+  color: var(--text-h);
   font-size: 23px;
   margin: 0 0 8px;
 }
 
 .training-content h4 {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 17px;
   margin: 0 0 15px;
 }
 
 .training-content p {
-  color: #bdb8ca;
+  color: var(--text);
   line-height: 1.8;
   font-size: 14px;
 }
@@ -138,9 +142,9 @@
 
 .training-tags span {
   padding: 8px 13px;
-  background: rgba(149, 132, 255, 0.12);
-  color: #c5baff;
-  border: 1px solid rgba(149, 132, 255, 0.2);
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
   border-radius: 20px;
   font-size: 12px;
 }

@@ -1,11 +1,17 @@
 
+/* ==============================
+   SKILLS SECTION
+================================ */
+
 .skills {
   min-height: 100vh;
   padding: 100px 10%;
-  background: #03020b;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
   box-sizing: border-box;
 }
+
+/* HEADING */
 
 .skills-heading {
   text-align: center;
@@ -13,7 +19,7 @@
 }
 
 .skills-heading p {
-  color: #9584ff;
+  color: var(--accent);
   letter-spacing: 4px;
   font-size: 13px;
   font-weight: bold;
@@ -22,16 +28,19 @@
 .skills-heading h2 {
   font-size: 48px;
   margin: 15px 0;
+  color: var(--text-h);
 }
 
 .skills-heading h2 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 .skills-heading h4 {
-  color: #aaa7bb;
+  color: var(--text);
   font-weight: 400;
 }
+
+/* SKILLS GRID */
 
 .skills-grid {
   display: grid;
@@ -39,10 +48,12 @@
   gap: 25px;
 }
 
+/* SKILL CARD */
+
 .skill-card {
   min-height: 170px;
-  background: #0c0a19;
-  border: 1px solid rgba(149,132,255,0.2);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -54,8 +65,8 @@
 }
 
 .skill-card:hover {
-  border-color: #9584ff;
-  box-shadow: 0 0 25px rgba(149,132,255,0.2);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
 }
 
 .skill-icon {
@@ -65,12 +76,15 @@
 .skill-card h3 {
   font-size: 17px;
   margin: 0;
+  color: var(--text-h);
 }
 
 .skill-card span {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 13px;
 }
+
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .skills-grid {

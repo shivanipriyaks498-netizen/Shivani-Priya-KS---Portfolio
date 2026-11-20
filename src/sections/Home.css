@@ -9,10 +9,10 @@
   background:
     radial-gradient(
       ellipse at 50% 55%,
-      rgba(69, 42, 180, 0.25),
+      var(--accent-bg),
       transparent 45%
     ),
-    #03020b;
+    var(--bg);
 
   position: relative;
   display: grid;
@@ -21,7 +21,7 @@
   overflow: hidden;
   padding: 0 8% 100px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: var(--text);
 }
 
 /* LEFT TEXT */
@@ -34,14 +34,14 @@
 }
 
 .hero-small {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 22px;
   margin-bottom: 5px;
   font-weight: 500;
 }
 
 .hero-left h1 {
-  color: #ffffff;
+  color: var(--text-h);
   font-size: clamp(35px, 4vw, 58px);
   line-height: 1.08;
   font-weight: 800;
@@ -51,7 +51,7 @@
 }
 
 .hero-left h1 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 /* CENTRE PROFILE PHOTO */
@@ -72,9 +72,9 @@
   width: 360px;
   height: 300px;
   max-width: 100%;
-  background: #5738ff;
+  background: var(--accent);
   filter: blur(95px);
-  opacity: 0.65;
+  opacity: 0.35;
   border-radius: 50%;
   bottom: 100px;
 }
@@ -110,7 +110,7 @@
 }
 
 .hero-right h2 {
-  color: #ffffff;
+  color: var(--text-h);
   font-size: clamp(35px, 4vw, 55px);
   line-height: 1.05;
   font-weight: 800;
@@ -119,12 +119,10 @@
 }
 
 .hero-right h2 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
-/* ==============================
-   SOCIAL ICONS + RESUME
-================================ */
+/* SOCIAL ICONS + RESUME */
 
 .hero-actions {
   position: absolute;
@@ -150,9 +148,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  background: rgba(149, 132, 255, 0.08);
-  border: 1px solid rgba(149, 132, 255, 0.4);
+  color: var(--text-h);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
   border-radius: 50%;
   text-decoration: none;
   font-size: 16px;
@@ -168,11 +166,11 @@
 }
 
 .social-btn:hover {
-  color: #ffffff;
-  background: #9584ff;
-  border-color: #9584ff;
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
   transform: translateY(-6px);
-  box-shadow: 0 0 22px rgba(149, 132, 255, 0.5);
+  box-shadow: var(--shadow);
 }
 
 /* RESUME BUTTON */
@@ -183,23 +181,23 @@
   justify-content: center;
   gap: 11px;
   padding: 15px 28px;
-  color: #ffffff;
-  background: linear-gradient(135deg, #9584ff, #7156e8);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--bg);
+  background: var(--accent);
+  border: 1px solid var(--accent-border);
   border-radius: 50px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.7px;
-  box-shadow: 0 8px 25px rgba(149, 132, 255, 0.25);
+  box-shadow: var(--shadow);
   transition: all 0.3s ease;
   white-space: nowrap;
 }
 
 .resume-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(149, 132, 255, 0.5);
-  background: linear-gradient(135deg, #a99bff, #8068f5);
+  box-shadow: var(--shadow);
+  filter: brightness(1.08);
 }
 
 .resume-btn svg {
@@ -214,9 +212,7 @@
   font-size: 22px;
 }
 
-/* ==============================
-   TABLET RESPONSIVE
-================================ */
+/* TABLET RESPONSIVE */
 
 @media (max-width: 1024px) {
   .home {
@@ -254,9 +250,7 @@
   }
 }
 
-/* ==============================
-   MOBILE RESPONSIVE
-================================ */
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 850px) {
   .home {
@@ -334,9 +328,7 @@
   }
 }
 
-/* ==============================
-   SMALL MOBILE
-================================ */
+/* SMALL MOBILE */
 
 @media (max-width: 480px) {
   .home {

@@ -1,12 +1,14 @@
 
-/* ABOUT SECTION */
+/* ==============================
+   ABOUT SECTION
+================================ */
 
 .about {
   min-height: 100vh;
   padding: 100px 10%;
   box-sizing: border-box;
-  background: #03020b;
-  color: white;
+  background: var(--bg);
+  color: var(--text);
 }
 
 /* HEADING */
@@ -17,7 +19,7 @@
 }
 
 .about-subtitle {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 13px;
   letter-spacing: 4px;
   font-weight: 600;
@@ -27,10 +29,11 @@
   font-size: 48px;
   margin: 12px 0;
   font-weight: 800;
+  color: var(--text-h);
 }
 
 .about-heading h2 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 /* CONTENT */
@@ -47,20 +50,21 @@
 .about-text h3 {
   font-size: 30px;
   margin-bottom: 10px;
+  color: var(--text-h);
 }
 
 .about-text h3 span {
-  color: #9584ff;
+  color: var(--accent);
 }
 
 .about-text h4 {
-  color: #9584ff;
+  color: var(--accent);
   font-size: 19px;
   margin-bottom: 25px;
 }
 
 .about-text p {
-  color: #b9b6c9;
+  color: var(--text);
   font-size: 16px;
   line-height: 1.9;
   margin-bottom: 18px;
@@ -72,17 +76,17 @@
   display: inline-block;
   margin-top: 20px;
   padding: 13px 28px;
-  border: 1px solid #9584ff;
+  border: 1px solid var(--accent);
   border-radius: 30px;
-  color: white;
+  color: var(--accent);
   text-decoration: none;
   transition: 0.3s;
 }
 
 .about-btn:hover {
-  background: #9584ff;
-  color: #03020b;
-  box-shadow: 0 0 25px rgba(149,132,255,0.4);
+  background: var(--accent);
+  color: var(--bg);
+  box-shadow: var(--shadow);
 }
 
 /* RIGHT CARD */
@@ -90,16 +94,17 @@
 .about-card {
   position: relative;
   padding: 40px;
-  background: #0b0917;
-  border: 1px solid rgba(149,132,255,0.3);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(80,50,180,0.1);
+  box-shadow: var(--shadow);
 }
 
 .about-card h3 {
   font-size: 25px;
   margin-bottom: 30px;
+  color: var(--text-h);
 }
 
 .passion-item {
@@ -107,16 +112,16 @@
   align-items: center;
   gap: 20px;
   padding: 17px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid var(--border);
 }
 
 .passion-item span {
-  color: #9584ff;
+  color: var(--accent);
   font-weight: bold;
 }
 
 .passion-item p {
-  color: #e0ddeb;
+  color: var(--text);
   margin: 0;
 }
 
