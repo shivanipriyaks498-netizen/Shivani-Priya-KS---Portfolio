@@ -26,23 +26,25 @@ const projects = [
   },
   {
     number: "03",
-    title: "Destiny Travels",
-    category: "FULL STACK DEVELOPMENT",
+    title: "Career Track",
+    category: "FULL STACK WEB DEVELOPMENT",
     description:
-      "A travel destination management application that allows users to manage and explore destination information.",
-    technologies: ["JavaScript", "Express.js", "MongoDB", "Node.js"],
+      "Developed a Career Track application to help users explore career opportunities, manage their career goals, and track professional growth.",
+    technologies: ["JavaScript", "React.js", "HTML5", "CSS3"],
     github:
-      "https://github.com/shivanipriyaks498-netizen/Destiny-Travels",
+      "https://github.com/shivanipriyaks498-netizen/CareerTrack-Job-Application-Interview-Tracker.git",
+    demo:"https://career-track-job-application-interv.vercel.app",
   },
   {
     number: "04",
-    title: "Data Visualization",
+    title: "Sentiment Analysis",
     category: "DATA ANALYTICS",
     description:
-      "A data visualization project focused on presenting information through meaningful charts, dashboards and visual insights.",
-    technologies: ["Python", "Pandas", "Matplotlib"],
+      "Built a Python-based Sentiment Analysis Dashboard using NLP to classify reviews and visualize positive, negative, and neutral sentiments.",
+    technologies: ["Python", "Pandas", "NumPy", "Matplotlib", "Streamlit"],
     github:
-      "https://github.com/shivanipriyaks498-netizen/CodeAlpha_Data-Visualization",
+      "https://github.com/shivanipriyaks498-netizen/Sentiment-Analysis.git",
+    demo:"https://sentiment-analysisgit-wpt6c4cuwuelfzwzcpqjwj.streamlit.app/",
   },
   {
     number: "05",
