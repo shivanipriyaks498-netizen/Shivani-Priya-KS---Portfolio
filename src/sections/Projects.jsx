@@ -46,26 +46,6 @@ const projects = [
       "https://github.com/shivanipriyaks498-netizen/Sentiment-Analysis.git",
     demo:"https://sentiment-analysisgit-wpt6c4cuwuelfzwzcpqjwj.streamlit.app/",
   },
-  {
-    number: "05",
-    title: "JavaScript Real-World Projects",
-    category: "WEB DEVELOPMENT",
-    description:
-      "A collection of practical JavaScript projects created to improve programming, DOM manipulation and problem-solving skills.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github:
-      "https://github.com/shivanipriyaks498-netizen/JavaScript-Real-World-Projects",
-  },
-
-  {
-    number: "06",
-    title: "Sound Wave - Music Player",
-    category: "FRONTEND WEB DEVELOPMENT",
-    description:
-      "A music player web application with an interactive interface for playing music and controlling playback.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/shivanipriyaks498-netizen/Sound-Wave-.git",
-  },
 ];
 
 function Projects() {

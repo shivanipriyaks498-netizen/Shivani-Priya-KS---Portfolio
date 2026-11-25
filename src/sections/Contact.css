@@ -10,6 +10,10 @@
   color: var(--text);
 }
 
+/* ==============================
+   CONTACT HEADING
+================================ */
+
 .contact-heading {
   text-align: center;
   margin-bottom: 65px;
@@ -36,19 +40,29 @@
   font-weight: 400;
 }
 
+/* ==============================
+   CONTACT CONTAINER
+================================ */
+
 .contact-container {
   max-width: 750px;
   margin: auto;
 }
 
+/* ==============================
+   CONTACT INFORMATION CARD
+================================ */
+
 .contact-info {
   text-align: center;
   padding: 50px 35px;
+
   background: linear-gradient(
     145deg,
     var(--surface),
     var(--bg)
   );
+
   border: 1px solid var(--border);
   border-radius: 22px;
   box-shadow: var(--shadow);
@@ -66,12 +80,18 @@
   margin-bottom: 28px;
 }
 
+/* ==============================
+   EMAIL LINK
+================================ */
+
 .contact-email {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+
   color: var(--accent);
   text-decoration: none;
+
   margin-bottom: 25px;
   transition: 0.3s;
 }
@@ -86,7 +106,9 @@
   font-size: 22px;
 }
 
-/* SOCIAL MEDIA BUTTONS */
+/* ==============================
+   SOCIAL MEDIA BUTTONS
+================================ */
 
 .contact-socials {
   display: flex;
@@ -96,24 +118,36 @@
   margin: 15px 0 30px;
 }
 
+/* LinkedIn, GitHub and Resume buttons */
+
 .contact-social-btn {
   width: 48px;
   height: 48px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   border: 1px solid var(--accent);
   border-radius: 50%;
+
   background: var(--accent-bg);
   color: var(--accent);
+
   text-decoration: none;
   transition: 0.3s ease;
+
+  cursor: pointer;
 }
+
+/* Social SVG icons */
 
 .contact-social-btn svg {
   width: 23px;
   height: 23px;
 }
+
+/* Hover Effect */
 
 .contact-social-btn:hover {
   background: var(--accent);
@@ -122,20 +156,33 @@
   box-shadow: var(--shadow);
 }
 
-/* LET'S TALK BUTTON */
+/* Resume download icon */
+
+.contact-social-btn[aria-label="Download Resume"] svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ==============================
+   LET'S TALK BUTTON
+================================ */
 
 .lets-talk-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+
   padding: 15px 38px;
   border-radius: 30px;
+
   background: var(--accent);
   color: var(--bg);
+
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
+
   transition: 0.3s ease;
   box-shadow: var(--shadow);
 }
@@ -151,9 +198,12 @@
   box-shadow: var(--shadow);
 }
 
-/* RESPONSIVE DESIGN */
+/* ==============================
+   RESPONSIVE DESIGN - TABLET
+================================ */
 
 @media (max-width: 768px) {
+
   .contact {
     padding: 75px 6%;
   }
@@ -169,15 +219,31 @@
   .contact-info h3 {
     font-size: 25px;
   }
+
 }
 
+/* ==============================
+   RESPONSIVE DESIGN - MOBILE
+================================ */
+
 @media (max-width: 400px) {
+
   .contact-email {
     font-size: 13px;
+  }
+
+  .contact-socials {
+    gap: 14px;
   }
 
   .contact-social-btn {
     width: 44px;
     height: 44px;
   }
+
+  .contact-social-btn svg {
+    width: 21px;
+    height: 21px;
+  }
+
 }

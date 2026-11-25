@@ -20,22 +20,30 @@ function Contact() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
       >
         <p>GET IN TOUCH</p>
+
         <h2>
           Let's <span>Connect</span>
         </h2>
-        <h4>Have an opportunity or project in mind? Let's talk!</h4>
+
+        <h4>
+          Have an opportunity or project in mind? Let's talk!
+        </h4>
       </motion.div>
 
+      {/* Contact Container */}
       <motion.div
         className="contact-container"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
       >
 
         <div className="contact-info">
+
           <h3>Have an opportunity?</h3>
 
           <p>
@@ -43,6 +51,7 @@ function Contact() {
             let's start a conversation!
           </p>
 
+          {/* Email */}
           <a
             href={`mailto:${email}`}
             className="contact-email"
@@ -96,16 +105,44 @@ function Contact() {
               </svg>
             </a>
 
+            {/* Resume Download */}
+            <a
+              href="/Shivani_Resume.pdf"
+              download="Shivani_Priya_Resume.pdf"
+              className="contact-social-btn"
+              aria-label="Download Resume"
+              title="Download Resume"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 3V15M7 10L12 15L17 10M5 19H19"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </a>
+
           </div>
 
           {/* Let's Talk Button */}
-          <a href={mailtoLink} className="lets-talk-btn">
+          <a
+            href={mailtoLink}
+            className="lets-talk-btn"
+          >
             Let's Talk <span>↗</span>
           </a>
 
         </div>
 
       </motion.div>
+
     </section>
   );
 }
