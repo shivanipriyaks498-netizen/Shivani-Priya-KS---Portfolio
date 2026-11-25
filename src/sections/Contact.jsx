@@ -5,6 +5,8 @@ import "./Contact.css";
 function Contact() {
   const email = "shivanipriyaks498@gmail.com";
 
+  const resumePath = `${import.meta.env.BASE_URL}files/Shivani%20Priya%20KS_Resume.pdf`;
+
   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
     "Let's Connect - Portfolio Inquiry"
   )}&body=${encodeURIComponent(
@@ -41,7 +43,6 @@ function Contact() {
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-
         <div className="contact-info">
 
           <h3>Have an opportunity?</h3>
@@ -65,7 +66,7 @@ function Contact() {
 
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/shivani-priya-ks"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-social-btn"
@@ -100,15 +101,15 @@ function Contact() {
               >
                 <path
                   fill="currentColor"
-                  d="M12 2A10 10 0 0 0 8.84 21.49C9.34 21.58 9.52 21.27 9.52 21V19.1C6.74 19.7 6.16 17.92 6.16 17.92C5.7 16.75 5.05 16.44 5.05 16.44C4.14 15.82 5.12 15.83 5.12 15.83C6.13 15.9 6.66 16.87 6.66 16.87C7.55 18.39 8.99 17.95 9.55 17.69C9.64 17.05 9.9 16.61 10.19 16.36C7.97 16.11 5.63 15.25 5.63 11.5C5.63 10.43 6.01 9.55 6.67 8.86C6.57 8.61 6.22 7.61 6.77 6.27C6.77 6.27 7.62 6 9.52 7.28A9.4 9.4 0 0 1 12 6.95C12.84 6.95 13.69 7.06 14.48 7.28C16.38 6 17.23 6.27 17.23 6.27C17.78 7.61 17.43 8.61 17.33 8.86C17.99 9.55 18.37 10.43 18.37 11.5C18.37 15.26 16.03 16.1 13.8 16.35C14.17 16.67 14.5 17.29 14.5 18.24V21C14.5 21.27 14.68 21.59 15.19 21.49A10 10 0 0 0 12 2Z"
+                  d="M12 2A10 10 0 0 0 8.84 21.49C9.34 21.58 9.52 21.27 9.52 21V19.1C6.74 19.7 6.16 17.92 6.16 17.92C5.7 16.75 5.05 16.44 5.05 16.44C4.14 15.82 5.12 15.83 5.12 15.83C6.13 15.9 6.66 16.87 6.66 16.87C7.55 18.39 8.99 17.95 9.55 17.69C9.64 17.05 9.9 17.29 10.19 16.36C7.97 16.11 5.63 15.25 5.63 11.5C5.63 10.43 6.01 9.55 6.67 8.86C6.57 8.61 6.22 7.61 6.77 6.27C6.77 6.27 7.62 6 9.52 7.28A9.4 9.4 0 0 1 12 6.95C12.84 6.95 13.69 7.06 14.48 7.28C16.38 6 17.23 6.27 17.23 6.27C17.78 7.61 17.43 8.61 17.33 8.86C17.99 9.55 18.37 10.43 18.37 11.5C18.37 15.26 16.03 16.1 13.8 16.35C14.17 16.67 14.5 17.29 14.5 18.24V21C14.5 21.27 14.68 21.59 15.19 21.49A10 10 0 0 0 12 2Z"
                 />
               </svg>
             </a>
 
             {/* Resume Download */}
             <a
-              href="/Shivani%20Priya%20KS_Resume.pdf"
-              download="Shivani Priya KS_Resume.pdf"
+              href={resumePath}
+              download="Shivani Priya KS - Resume.pdf"
               className="contact-social-btn"
               aria-label="Download Resume"
               title="Download Resume"
@@ -140,9 +141,7 @@ function Contact() {
           </a>
 
         </div>
-
       </motion.div>
-
     </section>
   );
 }
