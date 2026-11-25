@@ -107,8 +107,8 @@ function Contact() {
 
             {/* Resume Download */}
             <a
-              href="/Shivani_Resume.pdf"
-              download="Shivani_Priya_Resume.pdf"
+              href="/Shivani%20Priya%20KS_Resume.pdf"
+              download="Shivani Priya KS_Resume.pdf"
               className="contact-social-btn"
               aria-label="Download Resume"
               title="Download Resume"
